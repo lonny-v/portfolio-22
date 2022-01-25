@@ -70,7 +70,7 @@ h1 {
     color: var(--color-2);
 }
 
-h2, h3, h4 {
+h2{
     color: var(--color-3);
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -113,6 +113,7 @@ section{
     align-items: flex-end;
     padding: 0 0 10px 30px;
     font-size:35px;
+    border-radius: 10px;
 }
 .work-tiles {
     display: flex;
@@ -130,6 +131,7 @@ section{
     justify-content: left;
     align-items:flex-end;
     font-size: 20px;
+    border-radius: 7px;
 }
 
 .contact-links a{
@@ -141,4 +143,24 @@ section{
 .contact-links li{
     list-style: none;
     color: var(--color-3);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-button {
+    display: flex;
+    width: 20%;
+    height:50px;
+    margin: 27px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
