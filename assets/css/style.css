@@ -8,10 +8,11 @@ padding: 0;
     --color-2: #080054;
     --color-3: #e3e7e8;
     --color-4: steelblue;
+    --color-5: teal;
 
 }
 body {
-    background-image: linear-gradient(var(--color-1), var(--color-2));
+    background-image: linear-gradient(var(--color-5), var(--color-2));
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -62,7 +63,6 @@ p{
 }
 
 main{
-    margin: 10px 30px;
 }
 
 section{
@@ -82,4 +82,11 @@ section{
 .content {
     width:60%;
     padding-left: 7%;
+}
+
+.contact-links li, a{
+    list-style: none;
+    color: var(--color-3);
+    padding: 15px;
+    text-decoration: none;
 }
