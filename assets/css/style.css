@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-4);
-    height: 175px;
+    height: 170px;
     border-bottom: solid var(--color-2) 10px;
 }
 header nav ul {
@@ -36,7 +36,7 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 50px;
+    padding-right: 50px;
     text-decoration: underline;
     font-weight: bold;
     text-underline-offset: 10px;
@@ -53,7 +53,8 @@ header nav ul li a{
     align-items: flex-end;
     justify-content: flex-end;
     font-style: italic;
-    margin: 0 50px 50px 0;
+    margin-right: 50px;
+    margin-bottom: 40px;
     font-size: 25px;
     color: var(--color-2)
 }
@@ -99,6 +100,24 @@ section{
 .content {
     width:60%;
     padding-left: 7%;
+}
+
+.work-tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    display:flex;
+    flex-wrap: wrap;
+    background-color:var(--color-3);
+    width:30%;
+    height: 80px;
+    padding: 0 0 10px 30px;
+    margin: 10px;
+    justify-content: left;
+    align-items:flex-end;
+    font-size: 20px;
 }
 
 .contact-links a{
