@@ -12,7 +12,7 @@ padding: 0;
 
 }
 body {
-    background-image: linear-gradient(var(--color-5), var(--color-4), var(--color-2));
+    background-image: linear-gradient(purple, var(--color-4), var(--color-2));
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,8 +22,10 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-4);
-    /* height: 170px; */
+    /* background-color: var(--color-4); */
+    background-image: linear-gradient(black, gray);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-bottom: solid var(--color-2) 10px;
 }
 header nav ul {
@@ -38,13 +40,14 @@ header nav ul {
 header nav ul li {
     padding-right: 50px;
     text-decoration: underline;
+    color: var(--color-3);
     font-weight: bold;
     text-underline-offset: 10px;
     /* font-size:25px; */
 }
 header nav ul li a{
     font-size: 30px;
-    color: var(--color-3)
+    color: var(--color-3);
 }
 
 .quote {
@@ -58,7 +61,7 @@ header nav ul li a{
     margin-bottom: 10px; */
     margin: 10px 50px 10px 0;
     font-size: 25px;
-    color: var(--color-2)
+    color: var(--color-3)
 }
 
 h1 {
@@ -69,7 +72,7 @@ h1 {
     font-style: italic;
     text-decoration: underline;
     text-underline-offset: 10px;
-    color: var(--color-2);
+    color: var(--color-3);
 }
 
 h2{
@@ -82,9 +85,6 @@ h2{
 p{
     color: var(--color-3);
     line-height: 2;
-}
-
-main{
 }
 
 section{
@@ -114,7 +114,9 @@ section{
     display:flex;
     flex-wrap: wrap;
     height: 450px;
-    background-color: var(--color-3);
+    /* background-color: var(--color-3); */
+    background-image: url("../images/Run.png");
+    background-size: 120%;
     justify-content: left;
     align-items: flex-end;
     padding: 0 0 10px 30px;
@@ -128,16 +130,25 @@ section{
     margin-bottom: 30px;
 }
 
-.big-tile h3, h4, a{
+h3, h4, a{
     color: var(--color-2);
     text-decoration: none;
+}
+
+.big-tile h3 {
+    background-color: yellow;
+    padding: 7px;
 }
 .work-tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 75%;
-    
+}
+
+.work-tiles h3 {
+    background-color: yellow;
+    padding: 5px;
 }
 
 .tile {
@@ -156,6 +167,25 @@ section{
     margin-bottom: 30px;
 }
 
+#tile-1{
+    background-image: url("../images/Dinner.png");
+    background-size: 100%;
+}
+
+#tile-2{
+    background-image: url("../images/Portfolio.png");
+    background-size: 100%;
+}
+
+#tile-3{
+    background-image: url("../images/Weather.png");
+    background-size: 100%;
+}
+
+#tile-4{
+    background-image: url("../images/Git.png");
+    background-size: 100%;
+}
 .contact-links a{
     color: var(--color-3);
     padding-left: 40px;
