@@ -54,7 +54,7 @@ header nav ul li a{
     justify-content: flex-end;
     font-style: italic;
     margin-right: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 25px;
     color: var(--color-2)
 }
@@ -114,6 +114,11 @@ section{
     padding: 0 0 10px 30px;
     font-size:35px;
     border-radius: 10px;
+}
+
+.big-tile h3, h4, a{
+    color: var(--color-2);
+    text-decoration: none;
 }
 .work-tiles {
     display: flex;
