@@ -113,6 +113,12 @@ section{
     /* padding-left: 7%; */
 }
 
+#about-me img {
+    margin-right: 30px;
+    border: solid white 5px;
+    border-radius: 7px;
+}
+
 .big-tile {
     display:flex;
     flex-wrap: wrap;
@@ -120,6 +126,7 @@ section{
     /* background-color: var(--color-3); */
     background-image: url("../images/Run.png");
     background-size: 120%;
+    /* background-repeat:no-repeat; */
     justify-content: left;
     align-items: flex-end;
     padding: 0 0 10px 30px;
