@@ -10,25 +10,24 @@ scroll-behavior: smooth;
     --color-3: #e3e7e8;
     --color-4: steelblue;
     --color-5: teal;
-
+    --color-6: gray;
+    --color-7: turquoise;
 }
+
 body {
     background-image: linear-gradient(black, var(--color-4), var(--color-2));
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    /* background-color: black; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* background-color: var(--color-4); */
-    background-image: linear-gradient(black, gray);
+    background-image: linear-gradient(black, var(--color-6));
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: solid turquoise 10px;
+    border-bottom: solid var(--color-7) 10px;
 }
 header nav ul {
     display: flex;
@@ -40,12 +39,11 @@ header nav ul {
 }
 
 header nav ul li {
-    padding-right: 50px;
+    padding: 50px;
     text-decoration: underline;
     color: var(--color-3);
     font-weight: bold;
     text-underline-offset: 10px;
-    /* font-size:25px; */
 }
 header nav ul li a{
     font-size: 30px;
@@ -59,8 +57,6 @@ header nav ul li a{
     align-items: flex-end;
     justify-content: flex-end;
     font-style: italic;
-    /* margin-right: 50px;
-    margin-bottom: 10px; */
     margin: 10px 50px 10px 0;
     font-size: 25px;
     color: var(--color-3)
@@ -76,7 +72,7 @@ h1 {
     text-underline-offset: 10px;
     color: var(--color-3);
 }
-
+/* end header styles */
 h2{
     color: var(--color-3);
     text-decoration: underline;
@@ -110,23 +106,21 @@ section{
     justify-content: space-evenly;
     width:60%;
     padding: 50px;
-    /* padding-left: 7%; */
 }
 
 #about-me img {
     margin-right: 30px;
-    border: solid white 5px;
+    border: solid var(--color-3) 5px;
     border-radius: 7px;
 }
 
+/* work styles */
 .big-tile {
     display:flex;
     flex-wrap: wrap;
     height: 450px;
-    /* background-color: var(--color-3); */
     background-image: url("../images/Run.png");
     background-size: 120%;
-    /* background-repeat:no-repeat; */
     justify-content: left;
     align-items: flex-end;
     padding: 0 0 10px 30px;
@@ -146,7 +140,7 @@ h3, h4, a{
 }
 
 .big-tile h3 {
-    background-color: turquoise;
+    background-color: var(--color-7);
     padding: 7px;
     border: solid var(--color-2) 3px;
     border-radius: 7px;
@@ -159,7 +153,7 @@ h3, h4, a{
 }
 
 .work-tiles h3 {
-    background-color: turquoise;
+    background-color: var(--color-7);
     padding: 5px;
     border: solid var(--color-2) 3px;
     border-radius: 7px;
@@ -170,7 +164,6 @@ h3, h4, a{
     flex-wrap: wrap;
     background-color:var(--color-3);
     width: 350px;
-    /* width:100%; */
     height: 90px;
     padding: 0 0 10px 30px;
     justify-content: left;
@@ -205,7 +198,9 @@ h3, h4, a{
     padding-left: 40px;
     text-decoration: none;
 }
+/* end work styles */
 
+/* contact styles */
 .contact-links li{
     list-style: none;
     color: var(--color-3);
@@ -227,11 +222,83 @@ h3, h4, a{
     align-items: center;
     border: solid var(--color-2) 2px;
     border-radius: 7px;
-    background-color:turquoise;
+    background-color:var(--color-7);
 }
 
 .contact-button a{
     text-decoration: none;
     color: var(--color-2);
     font-size: 20px;
+}
+
+/* end of styles, start of media queries */
+
+/* screen sizes less than 980px */
+@media screen and (max-width: 980px) {
+
+    header{
+        justify-content: center;
+    }
+
+    .section-title {
+        border: none;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .content{
+        width: 100%;
+        justify-content: center;
+
+    }
+    #about-me img{
+        margin: 0 0 40px 0;
+    }
+
+    .work-tiles{
+        justify-content: center;
+    }
+}
+
+/* screen sizes less than 768px */
+@media screen and (max-width: 768px) {
+
+    header nav{
+        width: 60%;
+        justify-content: center;
+    }
+    header nav ul li {
+        padding: 20px;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .quote{
+        justify-content: center;
+    }
+
+    .big-tile {
+        height: 275px;
+    }
+}
+/* screen sizes less than 575px */
+@media screen and (max-width: 575px) {
+
+    .big-tile{
+        align-items: flex-end;
+        justify-content: center;
+        height: 200px;
+        padding: 0 0 10px 0;
+    }
+    .tile {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 }
