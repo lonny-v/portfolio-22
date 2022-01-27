@@ -29,6 +29,7 @@ header{
     background-repeat: no-repeat;
     border-bottom: solid var(--color-7) 10px;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +46,7 @@ header nav ul li {
     font-weight: bold;
     text-underline-offset: 10px;
 }
+
 header nav ul li a{
     font-size: 30px;
     color: var(--color-3);
@@ -73,6 +75,7 @@ h1 {
     color: var(--color-3);
 }
 /* end header styles */
+
 h2{
     color: var(--color-3);
     text-decoration: underline;
@@ -113,8 +116,8 @@ section{
     border: solid var(--color-3) 5px;
     border-radius: 7px;
 }
-
 /* work styles */
+
 .big-tile {
     display:flex;
     flex-wrap: wrap;
@@ -145,6 +148,7 @@ h3, h4, a{
     border: solid var(--color-2) 3px;
     border-radius: 7px;
 }
+
 .work-tiles {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +197,7 @@ h3, h4, a{
     background-image: url("../images/Git.png");
     background-size: 100%;
 }
+
 .contact-links a{
     color: var(--color-3);
     padding-left: 40px;
@@ -212,6 +217,7 @@ h3, h4, a{
     width: 60%;
     justify-content: space-around;
 }
+
 .contact-button {
     display: flex;
     width: 20%;
@@ -254,8 +260,8 @@ h3, h4, a{
     .content{
         width: 100%;
         justify-content: center;
-
     }
+
     #about-me img{
         margin: 0 0 40px 0;
     }
@@ -272,6 +278,7 @@ h3, h4, a{
         width: 60%;
         justify-content: center;
     }
+
     header nav ul li {
         padding: 20px;
         justify-content: center;
@@ -286,6 +293,7 @@ h3, h4, a{
         height: 275px;
     }
 }
+
 /* screen sizes less than 575px */
 @media screen and (max-width: 575px) {
 
@@ -295,6 +303,7 @@ h3, h4, a{
         height: 200px;
         padding: 0 0 10px 0;
     }
+
     .tile {
         width: 300px;
         justify-content: center;
@@ -302,3 +311,4 @@ h3, h4, a{
         padding: 0;
     }
 }
+/* end media queries */
