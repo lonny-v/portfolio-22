@@ -122,7 +122,7 @@ section{
     display:flex;
     flex-wrap: wrap;
     height: 450px;
-    background-image: url("../images/Run.png");
+    background-image: url("../images/movies.png");
     background-size: 120%;
     justify-content: left;
     align-items: flex-end;
