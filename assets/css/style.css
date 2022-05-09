@@ -131,6 +131,19 @@ section{
     border: solid var(--color-2) 3px;
     border-radius: 10px;
 }
+.big-tile-1 {
+    display:flex;
+    flex-wrap: wrap;
+    height: 450px;
+    background-image: url("../images/ChessImg.jpeg");
+    background-size: 120%;
+    justify-content: left;
+    align-items: flex-end;
+    padding: 0 0 10px 30px;
+    font-size:35px;
+    border: solid var(--color-2) 3px;
+    border-radius: 10px;
+}
 
 .featured {
     width: 75%;
@@ -143,6 +156,12 @@ h3, h4, a{
 }
 
 .big-tile h3 {
+    background-color: var(--color-7);
+    padding: 7px;
+    border: solid var(--color-2) 3px;
+    border-radius: 7px;
+}
+.big-tile-1 h3 {
     background-color: var(--color-7);
     padding: 7px;
     border: solid var(--color-2) 3px;
